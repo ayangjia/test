@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>求出函数参数的总和</title>
+	<meta charset="utf-8">
+<style>
+	
+</style>
+<script>
+	var i = iResult = 0
+	function sum()
+	{
+		for (var i = 0; i < arguments.length; i++)
+		{
+			iResult += arguments[i]
+		}
+		return iResult
+	}
+	//应用
+	alert(sum(1,2,3,4,5,6,7,8,9,10,12))
+</script>
+</head>
+<body>
+<pre>
+&lt;script type="text/javascript"&gt;
+    var i = iResult = 0
+    function sum()
+    {
+        for (var i = 0; i < arguments.length; i++)
+        {
+            iResult += arguments[i]
+        }
+        return iResult
+    }
+    <span>//应用</span>
+    alert(sum(1,2,3,4,5,6,7,8,9,10)) <span>//输出55</span>
+&lt;/script&gt;
+</pre>
+
+</body>
+</html>
