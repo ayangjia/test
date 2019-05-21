@@ -1,0 +1,11 @@
+body{
+	background-color: #5fced8;
+	font-size:62.5%;
+}
+.ico-left{left: 2%; top: 2%; position: absolute;}
+.logo{text-align: center;margin-top:10em; margin-bottom: 5em;  }
+.des{text-align: center; font-size: 3em; line-height: 2em;color: #fff; margin-left:10%;margin-right:10%; margin-bottom: 3em; }
+.img-left{margin-left:10%;float: left;}
+.img-right{margin-right:10%;float: right;}
+.ico-com{text-align: center;}
+.ico-com p{text-align: center; font-size: 3em; ;color: #fff;}
