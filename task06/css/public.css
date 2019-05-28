@@ -172,7 +172,7 @@ select {
 .ico-more {
 	display: inline-block;
 	width: 1.5rem;
-	height: 2.8rem;
+	height: 1.7rem;
 	margin-left: 1.7rem;
 	margin-right: 1.7rem;
 	background-image: url(icon.png);
@@ -182,7 +182,6 @@ select {
 .ico-add {
 	display: inline-block;
 	width: 1.5rem;
-	height: 1.8rem;
 	margin-right: 1.1rem;
 	margin-left: 1.5rem;
 	background-image: url(icon.png);
@@ -200,11 +199,14 @@ select {
 }
 .col-cent {
 	display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     min-width: 15rem;
+	align-items: center;
 }
 .test-layout {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
 }
