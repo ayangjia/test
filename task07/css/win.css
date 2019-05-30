@@ -1,0 +1,156 @@
+/* 结果页 */
+
+
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0; 
+	padding: 0;
+	background-color: #29bde0;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	width: 100%;
+	height: 4.4rem;
+	background-color: #29bde0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	border-bottom: 1px solid #51C7E3;
+}
+.main{
+	width: 100%;
+	margin-top: 5.4rem;
+	margin-bottom: 6.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.top-ico {
+	width: 2.1rem;
+    height: 1.8rem;
+    background-image: url(icon.png);    
+    background-position: -0px -75px;
+    margin-left: 1.2rem;
+}
+.tips {
+    width: 2.0rem;
+    height: 1.7rem;
+    background-image: url(icon.png);
+    background-position: -0px -116px;
+    margin-right: 1.2rem;
+}
+.header span {
+	display: inline-block;
+	font-size: 1.7rem;
+	color: #fff;
+}
+.trophy {
+	width: 14.5rem;
+    height: 8.0rem;
+    background-image: url(icon2.png);
+    background-position: -0px -0px;
+    position: relative;
+}
+.trophy span{
+	width: 100%;
+	color: #fff;
+	font-size: 2.2rem;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+.writing {
+	width: 60%;
+	color: #ffc865;
+	font-size: 1.7rem;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 1.1rem;
+
+}
+.result,
+.role span{
+	color: #fff;
+	font-size: 1.4rem;
+	display: inline-block;
+	margin-top: 0.8rem;
+}
+.role span{
+	margin-right: 2.2rem;
+}
+.result {
+	width: 100%;
+}
+.part {
+	width: 60%;
+	margin-top: 3.2rem;
+	margin-bottom: 1.8rem;
+}
+.main-bot {
+		width: 100%;
+	background: #fff;
+}
+.course {
+	width: 100%;
+	border-bottom: 1px solid #E2E3E4; 
+	border-top: 1px solid #E2E3E4; 
+}
+.list {
+	width: 60%;
+	margin: 0 auto;
+}
+.list span {
+	display: inline-block;
+}
+.line-top {
+	margin-top: 0.6rem;
+	margin-bottom: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+}
+.day {
+	color: #515151;
+	font-size: 1.5rem;
+}
+.time {
+	color: #c7c7c7;
+	font-size: 1.0rem;
+}
+span.des {
+	width: 100%;
+	color: #a6a6a6;
+	font-size: 1.3rem;
+	margin-bottom: 1.2rem;
+}
+.footer {
+	width: 100%;
+	height: 6.5rem;
+	background: rgba(41,189,224,0.48);
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer button {
+	width: 40%;
+	height: 4.5rem;
+	color: #fff;
+	font-size: 2.0rem;
+	border: none;
+	border-radius: 8px;
+}
+.again {
+	background: #f66f6f;
+}
+.share {
+	background: #fbb435;
+}
