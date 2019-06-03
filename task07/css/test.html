@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	body,html {
+		font-size: 62.5%;
+	}
+</style>
+</head>
+
+<body>
+	<p style="font-size: 16px;"> body,html font-size: 62.5%;</p>
+<div style="display: flex; align-items: center;"><p> 默认字体大小 </p> <p style="font-size: 14px;">应该为16px*0.625 = 10px</p><p style="font-size: 12px;">font-size: 12px;</p></div>
+<p style="font-size: 16px;">字体大小font-size:16px</p>
+
+<div style="width: 10rem ;height: 10rem; background-color: red; font-size: 14px;">width: 10rem ;height: 10rem; google浏览器显示：120px X 120px</div>
+<p style="font-size: 1.6rem;">字体大小font-size:1.6rem; 显示为16px</p>
+<div style="width: 100px ;height: 100px; background-color: red; font-size: 14px;">width: 100px;height: 100px google浏览器显示：100px X 100px</div>
+ <p style="font-size: 14px;">总结：在google浏览器下 字体1rem = 10px; div 1rem=12px;</p>
+  <p style="font-size:23px">chrome中字体有最小限制，最小只能为12px，即当定义html{font-size:62.5%时} ,1rem=12px, 要解决这个问题，方法很多，简单的，定义html{font-size:625%}就行了，1rem=100px,这样子便于计算，同时不会有谷歌字体大小限制的问题...</p>
+
+</body>
+</html>
