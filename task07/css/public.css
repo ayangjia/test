@@ -61,6 +61,7 @@ a {
 	display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .main-title {
 	width: 100%;
@@ -117,7 +118,10 @@ a {
     background-position: -0px -0px;	
     position: absolute;
     top: 50%;
-    right: 6%;
+    right: .1rem;
 
+}
+.bottom-round ul li:hover{
+background-position: -0px -178px!important;
 }
 
