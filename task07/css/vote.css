@@ -95,14 +95,19 @@ a {
 	display: block;
 }
 .hover-down {
+    width: 100%;
+    height: 17vw;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
 }
 .hover-down span{
+	width: 100%;
 	color: #565656;
     font-size: .15rem;
-    margin-top: 38%;
     display: inline-block;
+    line-height: 17vw;
 
 }
 
