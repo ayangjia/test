@@ -51,14 +51,17 @@ ul.head-muen {
 
 .head-muen li {
 	text-align: center;
+	border-bottom: 2px #29b078 solid;   
+
 }
-.head-muen li :hover{
-    text-align: center;
-    border-bottom: 2px #fff solid;
+.head-muen li :hover {
     background-color: #29b078!important;
 }
-.currer {
-
+.head-muen li:hover {
+    border-bottom: 2px #fff solid;    
+}
+.currers {
+	border-bottom: 2px #fff solid!important;
 }
 .head-muen li>a {
 	color: #fff;
@@ -237,15 +240,28 @@ span.des {
 	margin-top: 25px; 
 }
 .tab-nav ul li{
-	display: inline-block;
-    width: 13px;
-    height: 18px;
-    background-image: url(icon.png);  
-    background-position: -0px -331px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 1px #999;
 }
-li.currer {
-	background-position: -0px -172px!important;
+.post2 {
+	bottom: -50px!important;
 }
+.tab-nav .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #29b078;
+}
+
 .coop {
 	width: 20%;
 	height: 184px;
@@ -370,6 +386,14 @@ footer a:hover{
 	justify-content: center;
   }
 
+.col-md-5ths:hover {
+	 box-shadow:5px 5px 5px #f4f4f4,
+    5px -5px 5px #f4f4f4,
+    -5px 5px 5px #f4f4f4,
+    -5px -5px 5px #f4f4f4;
+    position: relative;
+    z-index:1;
+}
   @media ( min-width : 992px) {
     .col-md-5ths {
       width: 20%;
