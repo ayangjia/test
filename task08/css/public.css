@@ -48,18 +48,24 @@ a:visited {
 ul.head-muen {
 	margin-bottom: 0;
 }
-
 .head-muen li {
 	text-align: center;
 	border-bottom: 2px #29b078 solid;   
+	background: none;
 
 }
 .head-muen li :hover {
     background-color: #29b078!important;
 }
+.nav>li>a:focus {
+  text-decoration: none;
+  background-color: #29b078;
+}         
 .head-muen li:hover {
     border-bottom: 2px #fff solid;    
 }
+
+
 .currers {
 	border-bottom: 2px #fff solid!important;
 }
@@ -275,13 +281,14 @@ span.des {
 }
 ul.frlink {
 	text-align: center;
+	margin: 0 auto;
+	width: 100%;
 
 }
 ul.frlink li {
 	float: left;
 	width: 60px;
-	margin-right: 25px;
-    margin-left: 25px;
+    margin-left: 3.125rem;
 	margin-bottom: 10px;
 	font-size: 14px;
 	color: #999;
@@ -312,7 +319,6 @@ footer a:hover{
 }
 .copy {
 	width: 100%;
-	height: 30px;
 	color: #fff;
 	font-size: 12px;
 	line-height: 30px;
@@ -509,7 +515,10 @@ ul {
 .col-md-4 {
 	margin-bottom: 20px;
 }
-.col-md-4:hover .layers{display: block!important;}
+.col-md-4:hover .layers {    
+	visibility: visible; 
+	animation: layers 1s;
+}
 .layers {
 	width: 100%;
 	height: 100%;
@@ -519,8 +528,18 @@ ul {
 	background-color: rgba(8, 1, 3, 0.8);
 	border-radius: 3px;
 	color: #fff;
-	display: none;
+	transition: 2s;
+	visibility: hidden;
 }
+
+
+@keyframes layers
+{
+    from{transform:rotateY(180deg);}
+    to{transform:rotateY(360deg);}
+}
+
+
 .layers-title{
 	width: 100%;
 	text-align: center;
@@ -559,6 +578,7 @@ ul {
 	.com-body {
 		margin: 1rem 1rem!important;
 	}
+	main {margin: 0 20px;}
 }
 .content {
 	background-color: #fff;
@@ -602,6 +622,7 @@ ul {
 }
 .left-nav ul li:hover{
 	list-style-image:url(list2.png);
+	color: #ff650e;
 }
 .li-currer {
 	list-style-image:url(list2.png)!important;
