@@ -84,9 +84,7 @@ ul.head-muen {
 	left: 10%;
 	top:0.9rem;
 }
-.logo img {
-	height: 40px;
-}
+
 .con-logo {
 	position: relative;
 }
@@ -281,7 +279,8 @@ span.des {
 ul.frlink {
 	text-align: center;
 	margin: 0 auto;
-	width: 100%;
+	display:table;
+	height:30px;
 
 }
 ul.frlink li {
@@ -333,7 +332,7 @@ footer a:hover{
 .bottom-link {
 	margin-top: 68px;
 }
-.bottom-link a {
+.bottom-link a[target] {
 	margin: 0 5px;
 }
 .our-web {
@@ -580,6 +579,13 @@ ul {
 	main {margin: 0 20px;}
 	.head-img span ,.head-tell span{display: none;}
 	.login,.register {display: inline-block!important;}
+	.register { margin-right:20%;}
+	.logo img {
+	height: 2.5rem;
+	}
+	span.fast,span.book,span.tie {
+	margin-bottom: 0;
+	}
 
 }
 .content {
