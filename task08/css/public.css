@@ -24,7 +24,6 @@ a:visited {
 }
 .head-img {
 	text-align: right;
-	height: 39px;
 }
 .head-img span{
 	display: inline-block;
@@ -85,9 +84,7 @@ ul.head-muen {
 	left: 10%;
 	top:0.9rem;
 }
-.logo img {
-	height: 40px;
-}
+
 .con-logo {
 	position: relative;
 }
@@ -176,7 +173,6 @@ span.des {
 .num {
 	color: #26a26f;
 	font-size: 18px;
-    margin-left: 14px;	
 }
 .tage-top {
 
@@ -281,14 +277,40 @@ span.des {
 }
 ul.frlink {
 	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style: none;
 }
+@media screen and (min-width: 992px) {
+.frlink li{
+    width: 10%;
+}
+}
+@media screen and (max-width: 992px) and (min-width: 576px){
+.frlink li{
+    width: 20%;
+}
+.weixin {display: block;}
+}
+@media screen and (max-width: 576px){
+.frlink li{
+    width: 50%;
+}
+.weixin {display: block;}
+}
+
+.frlink-xu {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: rgba(153,153,153,1);
+    border-radius: 50%;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
 ul.frlink li {
-	float: left;
-	width: 60px;
-    margin-left: 3.125rem;
 	margin-bottom: 10px;
 	font-size: 14px;
 	color: #999;
@@ -334,7 +356,7 @@ footer a:hover{
 .bottom-link {
 	margin-top: 68px;
 }
-.bottom-link a {
+.bottom-link a[target] {
 	margin: 0 5px;
 }
 .our-web {
@@ -579,6 +601,16 @@ ul {
 		margin: 1rem 1rem!important;
 	}
 	main {margin: 0 20px;}
+	.head-img span ,.head-tell span{display: none;}
+	.login,.register {display: inline-block!important;}
+	.register { margin-right:20%;}
+	.logo img {
+	height: 2.5rem;
+	}
+	span.fast,span.book,span.tie {
+	margin-bottom: 0;
+	}
+
 }
 .content {
 	background-color: #fff;
@@ -651,4 +683,10 @@ ul {
 	line-height: 150%;
 	margin: 38px 0 0 0;
 
+}
+.login,
+.register {
+  color: #000;
+  font-size: 0.875rem;
+  display: none;
 }
