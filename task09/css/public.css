@@ -81,10 +81,16 @@ ul.head-muen {
 }
 .logo {
 	position: absolute;
-	left: 10%;
 	top:0.9rem;
 }
+.web-hover{
+	padding-bottom: 6px;
+}
 
+.web-hover:hover {
+    color: #ffffff;
+    border-bottom:1px solid #ffffff;	
+}
 .con-logo {
 	position: relative;
 }
@@ -173,7 +179,6 @@ span.des {
 .num {
 	color: #26a26f;
 	font-size: 18px;
-    margin-left: 14px;	
 }
 .tage-top {
 
@@ -322,6 +327,11 @@ ul.frlink li a {
 ul.frlink li a:hover {
 	text-decoration: underline;
 	color: #26a26f;
+}
+@media screen and (max-width: 988px) and (min-width: 800px){
+	.title-img {text-align: center;}
+	.con-des p { margin: 0 4rem 0 4rem!important; }
+
 }
 footer {
 	background: #26a26f;
@@ -503,6 +513,7 @@ ul {
 	width: 54%;
 	float: left;
 	margin-left: 0.625rem;
+	word-break: break-all;
 }
 .post-des span {
 	display: inline-block;
