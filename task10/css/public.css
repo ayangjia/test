@@ -1,0 +1,365 @@
+html body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+header {
+	width: 100%;
+	background-color: #1d7ad9;
+}
+.header-muen {
+	width: 100%;
+	background-color: #f9f9f9;
+}
+/*导航栏*/
+nav{
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+nav>.container{
+    height: 100%;
+}
+.nav{
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.navbar-toggle {
+    border: 1px #1D7AD9 solid;
+    }
+.icon-bar {
+    background: #1D7AD9;
+}
+.nav-link{
+    background-color: #fff;
+    padding: 1rem 1.4rem;
+    margin: 0 1rem;
+    border-radius: 2px;
+    color: #000;
+}
+.nav-item {
+	text-align: center;
+}
+.nav-item:hover .nav-link{
+    background: #007bff;
+    color: #fff;
+}
+.copy {
+	width: 100%;
+	background-color: #1d7ad9;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+.copy p{
+	line-height: 33px;
+	margin: 0;
+}
+main {
+}
+.tell {
+	line-height: 40px;
+	color: #fff;
+	font-size: 1rem;
+	float: left;
+}
+.header-top {
+
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.bu-reg {
+	width: 6.5rem;
+	height: 40px;
+	background-color: #ffffff;
+	text-align: center;
+}
+.bu-reg a{
+	line-height: 40px;
+    font-size: 1rem;
+    color: #333;
+}
+.bu-log {
+	width: 3.1rem;
+	border-left: 1px #fff solid;
+	text-align: center;
+}
+.bu-log a{
+	color: #fff;
+	font-size: 1rem;
+	line-height: 40px;
+
+}
+
+.bu-log:hover {
+	width: 6.5rem;
+	height: 40px;
+	background-color: #ffffff;
+	text-align: center;	
+	color: #333;
+}
+.bu-log:hover a{
+	color: #333;
+}
+.bu-log::hover {
+	
+
+}
+.login {
+	float: right;
+	display: flex;
+}
+.progress-step1 {
+	background: #ff7f02;
+}
+.progress-step2,.progress-step3,.progress-step4 {
+	background: #ccc;
+}
+.progress-bar-over {
+	background: #ff7f02;
+}
+.hover-color { background: red; }
+.progress {
+	height: 5px;
+}
+.yuan-com {
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	background-color: #ff7f02;
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.yuan-com-un {
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	background-color: #ccc;
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.jindu1,.jindu2,.jindu3,.jindu4 {
+	width: 25%;
+	float: left;
+	text-align: center;
+    position: relative;
+    top: -33px;
+}
+.jindu2:hover .yuan-com-un{
+	background: #ff7f02;
+}
+.jindu2:hover .jindu-des-un{
+	color: #ff7f02;
+}
+
+.jindu3:hover .yuan-com-un{
+	background: #ff7f02;
+}
+.jindu3:hover .jindu-des-un{
+	color: #ff7f02;
+}
+.jindu4:hover .yuan-com-un{
+	background: #ff7f02;
+}
+.jindu4:hover .jindu-des-un{
+	color: #ff7f02;
+}
+
+.jindu-des {
+	font-size: 1.125rem;
+	color: #ff7f02;
+	display: block;
+	margin-top: 24px;
+}
+.jindu-des-un {
+	font-size: 1.125rem;
+	color: #ccc;
+	display: block;
+	margin-top: 24px;	
+}
+.step{
+	width: 50%;
+	float: right;
+	position: relative;
+	margin-top: 50px;
+}
+.tab-title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.clearfix {
+	clear: both;
+}
+.span-ico {
+	display: inline-block;
+	width: 4px;
+	height: 21px;
+	background-color: #1d7ad9;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+.tab-title-i{
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 1.375rem;
+}
+.table-head{
+	width: 100%;
+	height: 45px;
+	background: #e6e6e6;
+	color: #1d7ad9;
+	font-size: 18px;
+}
+.table-bordered {
+	border-radius: 5px;
+}
+.step1,
+.step2,
+.step3 {
+	display: inline-block;
+	background: url(ico.png);
+	margin-right: 10px;
+}
+.step1 {
+    width: 19px;
+    height: 15px;
+    background-position: -0px -104px;	
+}
+.step2 {
+    width: 22px;
+    height: 20px;
+    background-position: -0px -48px;	
+}
+.step3 {
+    width: 15px;
+    height: 20px;
+    background-position: -0px -28px;	
+}
+.checkbox label{
+	color: #666;
+	font-size: 1.5rem;
+	margin: 10px 0;
+}
+.form-control {
+	max-width: 127px;
+	width: 100%;
+	font-size: .8rem;
+	float: right;
+	margin: 14px 14px;
+	background: url('jiantou.png') no-repeat scroll right center transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.checkbox {
+	float: left;
+}
+.row-center {
+	display: flex;
+	align-items: center;
+}
+.checkbox-inp {
+	width: 70px;
+	margin: 0 2px;
+	border: solid 1px #e8e8e;
+}
+.muen {
+	padding: 0px;
+}
+.muen li {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.footer-tags {
+	font-size: 16px;
+	color: #999;
+	display: block;
+	margin-bottom: 2rem;
+}
+.muen li a{
+	font-size: 16px;
+	color: #999;
+
+}
+.muen li a:hover{
+	color: #1d7ad9;
+}
+.call {
+	color: #999;
+
+}
+.call span {
+	line-height: 30px;
+}
+footer {
+	width: 100%;
+	background-color: #f9f9f9;
+}
+.footer-padding {
+	padding: 70px 0;
+}
+.btn-danger {
+	width: 179px;
+	height: 46px;
+}
+.form-but {
+	height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tab-title-i {
+	margin-bottom: 10px;
+}
+
+.checkbox label {
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.input-size {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+input[type="radio"] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: solid 1px #d5d5d5;
+    text-indent: .15em;
+    line-height: 1; 
+}
+input[type="radio"]:checked + label::before {
+	width: 1em;
+    height: 1em;
+    background-color: #fff;
+    border: solid 7px #1d7ad9;
+    background-clip: content-box;
+    padding: .2em;
+}
+.footer-between {
+	display: flex;
+}
