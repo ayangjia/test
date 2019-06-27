@@ -73,15 +73,15 @@ a:hover {
 	text-decoration: none;
 }
 .bu-reg {
-	width: 6.5rem;
-	height: 40px;
-	background-color: #ffffff;
+	width: 3.1rem;
 	text-align: center;
+	border-left: 1px #fff solid;
+	border-right: 1px #fff solid;
 }
 .bu-reg a{
 	line-height: 40px;
     font-size: 1rem;
-    color: #333;
+    color: #fff;
 }
 .bu-log {
 	width: 3.1rem;
@@ -96,22 +96,40 @@ a:hover {
 }
 
 .bu-log:hover {
-	width: 6.5rem;
-	height: 40px;
-	background-color: #ffffff;
-	text-align: center;	
-	color: #333;
+   width: 4.3rem;
+   background: #fff;
+}
+.bu-reg:hover {
+   width: 4.3rem;
+   background: #fff;
+   color: #333;
 }
 .bu-log:hover a{
 	color: #333;
 }
-.bu-log::hover {
-	
-
+.bu-reg:hover a{
+	color: #333;
 }
+
+
 .login {
 	float: right;
 	display: flex;
+}
+@media screen and (max-width: 500px){
+.step {
+	    width: 90%!important;
+}
+.checkbox {
+    width: 50%;
+}
+.input-size{
+	width: 100px;
+}
+.checkbox label {
+	font-size: 1rem!important;
+	padding-left: 0!important;
+}
 }
 .progress-step1 {
 	background: #ff7f02;
@@ -273,7 +291,7 @@ a:hover {
 	align-items: center;
 }
 .checkbox-inp {
-	width: 70px;
+	width: 4.375rem;
 	margin: 0 2px;
 	border: solid 1px #e8e8e;
 }
@@ -328,8 +346,6 @@ footer {
 }
 
 .checkbox label {
-	padding-left: 10px;
-	padding-right: 20px;
 }
 .input-size {
 	display: inline-block;
