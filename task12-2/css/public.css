@@ -1,0 +1,210 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header, .g-footer, .list-center {
+  width: 100%; }
+
+header {
+  height: 4.4rem;
+  background-color: #5fc0cd;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2; }
+
+.u-back {
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 1.7rem;
+  background: url(icon.png)-10px -216px;
+  background-repeat: no-repeat; }
+
+.g-footer {
+  height: 6rem;
+  background-color: #F8FAFB;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  display: flex;
+  justify-content: center; }
+
+.g-head {
+  height: 3.5rem;
+  background-color: #55a8b3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem; }
+
+.g-head span {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.g-head span:nth-child(1) {
+  width: 7.2rem;
+  height: 3.5rem; }
+
+.g-head span:nth-child(2) {
+  width: 7.2rem;
+  height: 3.5rem;
+  background-color: #fff;
+  color: #5fc0cd;
+  border-radius: 0.5rem; }
+
+main {
+  margin-top: 4.4rem;
+  margin-bottom: 10rem; }
+
+.u-home {
+  width: 3.58rem;
+  height: 23.5rem;
+  color: #5fc0cd;
+  text-align: center; }
+
+.u-home span:nth-child(1) {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(icon.png) -10px -135px;
+  background-repeat: no-repeat; }
+
+.u-home span:nth-child(2) {
+  display: inline-block;
+  font-size: 1.5rem; }
+
+.u-view {
+  width: 4rem;
+  height: 4rem;
+  background: url(icon.png)-10px -258px;
+  background-repeat: no-repeat;
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.u-user {
+  width: 3.58rem;
+  height: 23.5rem;
+  color: #5fc0cd;
+  text-align: center; }
+
+.u-user span:nth-child(1) {
+  display: inline-block;
+  width: 1.78em;
+  height: 2.05rem;
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: -10px -175px; }
+
+.u-user span:nth-child(2) {
+  display: inline-block;
+  font-size: 1.5rem; }
+
+select {
+  border: none;
+  outline: none;
+  width: 7rem;
+  height: 4rem;
+  line-height: 4rem;
+  margin-left: 2rem;
+  background-color: #fff; }
+
+.add-select {
+  width: 33%;
+  height: 6rem;
+  float: left;
+  font-size: 1.4rem;
+  line-height: 6rem;
+  color: #999;
+  border-bottom: 1px solid #e1e5e7;
+  text-align: center; }
+
+.list-center {
+  border-bottom: 1px solid #e1e5e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #5d5d5d; }
+
+.tab-date {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: flex-start; }
+
+.tab-time {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between; }
+
+.tab-add {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: flex-start; }
+
+.ico-date {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.35rem;
+  margin-right: 1.1rem;
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: -10px -34px; }
+
+.price {
+  color: #e63b0e;
+  min-width: 6.5rem; }
+
+.ico-more {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.7rem;
+  margin-left: 1.7rem;
+  margin-right: 1.7rem;
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: -10px -98px; }
+
+.ico-add {
+  display: inline-block;
+  width: 1.5rem;
+  margin-right: 1.1rem;
+  margin-left: 1.5rem;
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: -10px -66px; }
+
+.col-xs-8 span {
+  color: #333;
+  display: inline-block;
+  margin-left: 2.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.col-cent {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 15rem;
+  align-items: center; }
+
+.test-layout {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=public.css.map */
