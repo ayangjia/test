@@ -11,8 +11,6 @@ $bgc: #5fc0cd;
 $color-f: #fff;
 $center: center;
 
-.g-header,
-.g-footer,
 .g-banner,
 .u-title,
 .g-report dl dt, {
@@ -20,20 +18,18 @@ $center: center;
 }
 .g-header,
 .g-footer {
+	width: $width; 
 	text-align: $center; 
 	position: fixed;
 }
 .g-header,
-.u-tell,
+.u-tell {
+	color: $color-f; 
+}
 .u-name,
 .u-age,
 .u-add {
 	color: $color-f; 
-}
-.u-tell,
-.u-name,
-.u-age,
-.u-add {
 	position: absolute;
 	display: block;
 }
@@ -48,7 +44,19 @@ $center: center;
 	display: flex; 
 	align-items: $center; 	
 }
-
+.u-view,
+.u-tell {
+	border-radius: 0.5rem; 
+}
+.u-tell {
+	background: $bgc;
+	margin-left: 2%;
+}
+.u-title h1,
+.g-report dl {
+	margin-left: 1.6rem; 
+	font-size: 1.6rem; 
+}
 .g-header {
 	height: $height;
 	background-color: $bgc; 
@@ -70,15 +78,9 @@ button {
 }
 .u-view {
 	border: 0.2rem solid $bgc; 
-	border-radius: 0.5rem; 
 	color: $bgc; 
 	background: $color-f; 
 	margin-right: 2%;
-}
-.u-tell {
-	border-radius: 0.5rem; 
-	background: $bgc;
-	margin-left: 2%;
 }
 .g-footer {
 	z-index: 2; 
@@ -132,13 +134,9 @@ button {
 	width: 0.15rem;
 }
 .u-title h1 {
-	margin-left:1.3rem; 
-	font-size: 1.6rem; 
 	font-weight: normal;
 }
 .g-report dl {
-	font-size: 1.6rem; 
-	margin-left: 1.6rem; 
 	color: #999;
 }
 .g-report dl dt {
