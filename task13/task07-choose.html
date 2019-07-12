@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>桌游精灵-选择版本</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<!-- 引入 Bootstrap -->
+	<!--
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  -->
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+<section class="wraper-page">
+<header class="header">
+	<div class="top-menu btn-slide-bar"></div>
+</header>
+<main class="main">
+	<div class="last-title"><span></span><span>上次游戏：捉鬼猜词版</span><span class="last-back"></span></div>
+	<div class="main-choice">
+		<div class="main-title"><span>捉鬼游戏</span></div>
+		<div class="main-edition"><span><a href="task07-vote.html">简化版</a></span></div>
+		<span class="des">有1133个用户正在玩此款游戏</span>
+		<div class="main-edition"><span><a href="task07-vote.html">猜词版</span></a></div>
+		<span class="des">有1133个用户正在玩此款游戏</span>
+		<div class="main-edition"><span><a href="task07-vote.html">白痴版</a></span></div>
+		<span class="des">有1133个用户正在玩此款游戏</span>
+		<div class="bottom-round">
+			<ul>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+			<div class="right-next"></div>
+	</div>
+
+</main>
+<footer class="footer"></footer>
+</section>
+ <section class="slide-bar">
+ 	<ul>
+ 		<li class="u-gonggao">公告</li>
+ 		<li class="u-step">设置</li>
+ 		<li class="u-help">帮助</li>
+ 		<li class="u-about">关于</li>
+ 	</ul>
+ </section>
+ <script type="text/javascript">
+ 	var swiperFun = {
+    init:function(){
+        var _this = this ;
+        //点击事件
+        $('.btn-slide-bar').click(function(){
+            if($(this).hasClass('active')){
+                _this._swipeRight();
+            }else{
+                _this._swipeLeft();
+            }
+        });
+    },
+    _swipeLeft:function(){
+        $('.slide-bar').animate({'width':'270px'},"50");
+        $(".wraper-page").css("transform","translate3d(" + 270 + "px,0,0)");
+        $('.btn-slide-bar').addClass('active');
+    },
+    _swipeRight:function(){
+        $('.slide-bar').animate({'width':'0'},"50");
+        $(".wraper-page").css("transform","translate3d(" + 0 + "px,0,0)");
+        $('.btn-slide-bar').removeClass('active');
+    }
+}
+swiperFun.init();
+ </script>
+</body>
+</html>
+

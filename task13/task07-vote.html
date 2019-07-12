@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>桌游精灵-投票</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<!-- 引入 Bootstrap -->
+    <!--
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/vote.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<section class="wraper-page">    
+<header class="header">
+	<div class="top-ico btn-slide-bar"></div><span>投票</span><div class="close"></div>
+</header>
+<div class="main">
+	<div class="tips"><span>发言讨论结束，大家请投票</span> <span class="play"><audio src="video/vdo.mp3" controls="controls" style="width:120px; height:45px;opacity:0.1; position: relative; right: .1rem; top: -0.1rem;"></span></div>
+		<div class="tips-ico"></div>
+	<span class="tips-text">点击得票数最多人的头像</span>
+</div>
+   
+	<div class="content">
+
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">1号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">2号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>警察</span>
+        <div class="number">3号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>
+         <div class="mouseover">	
+        <div class="hover-down">
+        <span>法官</span>
+        <div class="number">4号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>狙击手</span>
+        <div class="number">5号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>  
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>医生</span>
+        <div class="number">6号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>  
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>杀手</span>
+        <div class="number">7号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>                 
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">8号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>    
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">9号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>    
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">10号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>    
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">11号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>    
+        <div class="mouseover">	
+        <div class="hover-down">
+        <span>水民</span>
+        <div class="number">12号</div>
+        <ul class="dropdown-content"><li class="knife"></li><li class="find"></li><li class="sight"></li><li class="cure"></li></ul>
+	    </div>
+        </div>                           
+	</div>		
+<footer class="footer">
+    <div class="footer-border"></div>
+	<a href="task07-win.html"><button>投死</button></a>
+</footer>
+</section>
+ <section class="slide-bar">
+    <ul>
+        <li class="u-gonggao">公告</li>
+        <li class="u-step">设置</li>
+        <li class="u-help">帮助</li>
+        <li class="u-about">关于</li>
+    </ul>
+ </section>
+ <script type="text/javascript">
+    var swiperFun = {
+    init:function(){
+        var _this = this ;
+        //点击事件
+        $('.btn-slide-bar').click(function(){
+            if($(this).hasClass('active')){
+                _this._swipeRight();
+            }else{
+                _this._swipeLeft();
+            }
+        });
+    },
+    _swipeLeft:function(){
+        $('.slide-bar').animate({'width':'270px'},"50");
+        $(".wraper-page").css("transform","translate3d(" + 270 + "px,0,0)");
+        $('.btn-slide-bar').addClass('active');
+    },
+    _swipeRight:function(){
+        $('.slide-bar').animate({'width':'0'},"50");
+        $(".wraper-page").css("transform","translate3d(" + 0 + "px,0,0)");
+        $('.btn-slide-bar').removeClass('active');
+    }
+}
+swiperFun.init();
+ </script>
+</body>
+</html>
